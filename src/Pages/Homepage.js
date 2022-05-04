@@ -29,7 +29,7 @@ const Homepage = () => {
                 </div>
             </div>
             <div className="project-title text-center" data-aos="zoom-in-down">
-                <h1>Project Sample</h1>
+                <h1>Project Samples</h1>
             </div>
             <div className="row">
                 <div className="col" data-aos="fade-right">

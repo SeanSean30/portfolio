@@ -1,14 +1,13 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import Homepage from './Components/Homepage';
+import Homepage from './Pages/Homepage';
 import Footer from './Components/Footer';
-import About from './Components/About';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+import About from './Pages/About';
+import Projects from './Pages/Projects';
+import Contact from './Pages/Contact';
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 

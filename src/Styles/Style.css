@@ -1,52 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 body{
     width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+    height: auto;
     overflow-x: hidden; 
     background-color: #a8dadc;
-}
-
+} 
+/* Navbar design */
 nav.navbar{
-    background-color: #192020;
+    background-color: #a8dadc;
+    margin: 0 2%;
 }
     .nav-link{
-        color: white;
+        color: black;
+        text-align: center;
     }
     .nav-link:hover{
-        color: #a8dadc;
+        color:#FF5666;
+        text-decoration-style: solid;
+        text-decoration: underline;
     }
     .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0   )' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    .navbar-toggler-icon {
+        border-color: rgb(255,255,255);
     }
-    
-    .navbar-light .navbar-toggler {
-        border: 1px solid white;
+    .nav-item1,.nav-item2,.nav-item4,
+    .nav-item5{
+        margin-top: 6%;
     }
+@media only screen and (max-width:992px) {
+    .navbar .navbar-nav {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+        grid-gap: 15px;
+        background-color: #a8dadc;
+        text-align: center;
+    }
+    ul li{
+        display: inline !important;
+    }
+    .nav-item3{
+        grid-area: header;
+    }
+    .nav-link{
+        text-transform: uppercase;
+    }
+}
+@media only screen and (max-width:426px){
+    .nav-item4{
+        grid-area: 3 / 1;
+        margin-top: 0;
+    }
+    .nav-item5{
+        grid-area: footer;
+        margin-top: 0;
+    }
+} 
+/* jumbotron homepage */
+.lead{
+    font-size:50px;
+    text-align: center;
+}
+/* Jumbotron homepage */
 .jumbotron{
     background-color: #a8dadc;
     font-family:Helvetica ;
-    
 }
-    .jumbotron-name1{
-        min-width: 40%;
-        max-width: 100%;
-    }
     .jumbotron-image{
-        max-width:40%;
-        height:auto;
-
+        width:50%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display:block
     }
-
-footer {
-    bottom: 0;
-    background-color: #192020;
-    color: white;
-}
-.card{
+    .jumbotron-name,.jumbotron-text{
+        font-size: 1.5rem;
+    }
+/* card on home page */
+.card-portfolio1{
     background-color: #a8dadc;
     border: 0;
+    margin: 5%;
+    transition: all 1s ease-in-out;
 }
     .card-body{
         text-align: center;
@@ -54,6 +93,237 @@ footer {
     .nav-link{
         align-items: center;
     }
+@media only screen and (max-width: 542px)  {
+    .card-portfolio1{
+        display: flex;
+        margin: 5%;
+    }
+}
+/* Article on about me and texts */
+.sean-sitting{
+    margin-left: 10%;
+}
+article{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+    .UE{
+        color: black;
+        text-decoration: underline;
+    }
+    .sean-info{
+        color: black;
+        text-decoration: underline;
+    }
+    .telus{
+        color: black;
+        text-decoration: underline;
+    }
+    .valorant{
+        color: black;
+        text-decoration: underline;
+    }
+    .dota2{
+        color: black;
+        text-decoration: underline;
+    }
+    .axie{
+        color: black;
+        text-decoration: underline;
+    }
+    .sean-sitting{
+        width:10%;
+        filter: grayscale(1);
+    }
+    .sean-sitting:hover{
+        filter: grayscale(0);
+        transition: all 0.20s ease-in-out;
+    }
+    .sykes{
+        color: black;
+        text-decoration: underline; 
+    }
+    .vega{
+        color: black;
+        text-decoration: underline;
+    }
+    .info-text,.modal-title{
+        color:black; 
+    }
+    .card-header{
+        color:black;
+    }
+    /* card bgs */
+    .card-1{
+        background-color: #998DA0;
+    }
+    .card-2{
+        background-color: #D0EFB1;
+    }
+    .card-3{
+        background-color: #ED9B40;
+    }
+    .card-1,.card-2,.card-3{
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    }
+@media only screen and (max-width: 990px){
+    .sean-sitting{
+        width:0%;
+    }
+}
+@media only screen and (min-width: 989px){
+    .sean-sitting{
+        width:10%;
+    }
+}
+
+    /* ACCORDION BUTTON */
+.accordion-button1,.accordion-button2
+,.accordion-button3{
+    border-radius: 12px;
+}
+    .accordion-button1{
+        background-color: #998DA0;
+        border-color: #998DA0;
+    }
+    .accordion-button2{
+        background-color: #D0EFB1;
+        border-color: #D0EFB1;
+    }
+   .accordion-button3{
+       background-color: #ED9B40;
+       border-color: #ED9B40;
+   }
+/* career css */
+.career{
+    text-align: center;
+}
+    .career-highlights{
+        background-color:yellow;
+        border-color:yellow;
+    }
+    .row{
+        border-color: #a8dadc;
+    }
+    .card{
+        border-color: #a8dadc;
+    }
+    .career-body{
+        background-color: #a8dadc;
+        border-color: #a8dadc;
+    }
+    /* skills card */
+.skills-text{
+    text-align: center;
+}
+    .s:hover{
+        color:red;
+    }
+    .k:hover{
+        color:orange;
+    }
+    .i:hover{
+        color:yellow;
+    }
+    .l:hover{
+        color:green;
+    }
+    .l1:hover{
+        color:blue;
+    }
+    .s1:hover{
+        color:indigo;
+    }
+    .card-about{
+        width: 18rem;
+        background-color: #a8dadc;
+        border-color: #a8dadc;
+    }
+    .col-skills1,.col-skills2,.col-skills3,.col-skills4,
+    .col-skills5,.col-skills6,.col-skills7,.col-skills{
+        transition: all 1s ease-in-out;
+    }
+
+/* Modal for about me page */
+.modal-content{
+    background-color: #a8dadc;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.carousel-indicators li{
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+}
+/* Project page */
+.card-react,.card-css,.card-node,.card-portfolio{
+    background-color: #CEDFD9;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+    .d-block{
+        border-radius: 12px;
+    }
+    .card-text-react,.card-header,.card-css-text,
+    .card-portfolio-text,.card-node-text{
+        font-size: 1.5rem;
+    }
+
+/* Contact me page */
+.contact-jumbotron{
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.contact-row{
+    background-color: #2E4756;
+    margin: 2% 5%;
+    padding: 2%;
+    border-radius: 20px;
+}
+.contact-col1{
+    color:white;
+}
+.contact-col2{
+    display: flex;
+    justify-content: start;
+    margin-left:5%;
+}
+    .contact-items{
+        color: white;
+    }
+.email,.name,.subject,.message{
+    width:300px;
+}
+@media only screen and (max-width: 542px)  {
+    .contact-col2{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* footer  links */
+footer {
+    bottom: 0;
+    background-color: #192020;
+}
+    .fa-brands, .fa-solid, .text{
+        color: white;
+    }
+    .fa-brands:hover{
+        transition: all 0.25s ease-in-out;
+        transform: scale(2);
+    }
+    .fa-solid:hover {
+        transition: all 0.25s ease-in-out;
+        transform: scale(2);
+      }
+    
+    
 
 
 

@@ -95,7 +95,7 @@ const Projects = () => {
                             NodeJS
                         </div>
                         <div className="card-body">
-                        <h3 className="card-node-text pt-3">For my NodeJS project, I created a simple blog site that can create, read, update and delete some data</h3>
+                        <h3 className="card-node-text pt-3">For my NodeJS project,I used the basics of Node and JavaScript to create a simple blog site that could create, read, update and delete some data</h3>
                         </div>
                     </div>
                 </div>

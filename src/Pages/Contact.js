@@ -11,7 +11,7 @@ const Contact = () => {
         emailjs.sendForm('service_26z7qpt', 'template_2gzdfz9', e.target, 'WR7AqON6nK3W9tb2n')
             .then((result) => {
                 console.log(result.text);
-                alert("Thank you for reaching out to me");
+                alert("Thank you for filling up the form, you can also send me a personal email or you can contact me on the number provided.");
             }, (error) => {
                 console.log(error.text);
             });

@@ -38,7 +38,7 @@ const Homepage = () => {
                         <div className="card-body">
                             <h5 className="card-title">React JS CSS</h5>
                             <p className="card-text">This is my sample project wherein I used React, Bootstrap, JavaScript and CSS</p>
-                            <a href="./Projects" className="nav-link" aria-current="page" class="btn btn-primary">Weekend Summary Sample</a>
+                            <a href="/portfolio/Projects" className="nav-link" aria-current="page" class="btn btn-primary">Weekend Summary Sample</a>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Homepage = () => {
                         <div className="card-body">
                             <h5 className="card-title ">CSS Fundamentals</h5>
                             <p className="card-text ">In this project, I used the basics of CSS Fundamentals</p>
-                            <a href="./Projects" className="nav-link" aria-current="page" class="btn btn-primary">CSS Fundamentals Sample</a>
+                            <a href="/portfolio/Projects" className="nav-link" aria-current="page" class="btn btn-primary">CSS Fundamentals Sample</a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ const Homepage = () => {
                         <div className="card-body">
                             <h5 className="card-title ">NodeJS</h5>
                             <p className="card-text ">In this project, I used the basics of NodeJS to create a simple blog site</p>
-                            <a href="./Projects" className="nav-link" aria-current="page" class="btn btn-primary">NodeJS Sample</a>
+                            <a href="/portfolio/Projects" className="nav-link" aria-current="page" class="btn btn-primary">NodeJS Sample</a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const Homepage = () => {
                         <div className="card-body">
                             <h5 className="card-title ">Portfolio</h5>
                             <p className="card-text ">This is the current project that I've created which you can navigate all throughout the contents.</p>
-                            <a href="./Projects" className="nav-link" aria-current="page" class="btn btn-primary">Portfolio Sample</a>
+                            <a href="/portfolio/Projects" className="nav-link" aria-current="page" class="btn btn-primary">Portfolio Sample</a>
                         </div>
                     </div>
                 </div>

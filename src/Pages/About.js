@@ -19,6 +19,7 @@ import mongodb from '../Images/skills/mongodb.png';
 import java from '../Images/skills/java.png';
 import react from '../Images/skills/react.png';
 import node from '../Images/skills/node.png';
+import CV from '../Pdf/CV.pdf';
 
 const About = () => {
 
@@ -40,6 +41,9 @@ const About = () => {
 
                                         <div className="about-text ml-5 mr-5 mt-3">
                                             <h2 className="info-text">Hi! I'm <a className="sean-info" href="https://www.facebook.com/Tusheeeeey" target="_blank">Sean Cole P. Touchette</a>, 22 years old, taking Bachelor of Science in Information Technology at <a className="UE" href="https://www.ue.edu.ph/mla/" target="_blank">University of the East Manila.</a> I'm currently an intern at <a className="telus" href="https://www.telusinternational.com/" target="_blank">TELUS International Philippines</a> as a Full Stack Developer. I've been an intern for quite a while now and I've learned a lot, but am still in the process to solidify my programming skills.</h2><br />
+                                            <button className='button-resume mb-2' title="Download my Resume" href={ CV } >
+                                            <a href={ CV } className="download-button mt-3" download>Download My Resume</a>
+                                            </button>
                                             <h2 className="info-text">That doesn't stop there, outside work and school, I'm also a member of <a className="sean-info" href="https://www.facebook.com/aranzazualtarservers" target="_blank">Ministry of Altar Server</a> for almost 12 years now. Since I was a kid, I've been in the organization which became my second home and my second family. You can see some pictures from the time that I became part of the organization up until present.</h2>
                                         </div>
                                         <button type="button" className="btn btn-primary ml-5 mt-3" data-toggle="modal" data-target="#exampleModalCenter">

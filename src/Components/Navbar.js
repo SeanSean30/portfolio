@@ -21,7 +21,7 @@ const Navbar = () => {
                         </li>
                         {<li className="nav-item3">
                             <Link to="/" className="nav-link" aria-current="page" data-aos="zoom-in">
-                                <img className="homepage" src={homepage} alt="cv" />
+                                <img className="homepage-img" src={homepage} alt="cv" />
                             </Link>
                         </li>}
                         <li className="nav-item4">
